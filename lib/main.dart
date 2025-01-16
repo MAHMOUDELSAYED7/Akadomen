@@ -1,8 +1,9 @@
 import 'dart:io';
-import 'package:akadomen/app.dart';
+
 import 'package:flutter/material.dart';
 import 'package:window_manager/window_manager.dart';
 
+import 'app.dart';
 import 'core/service/cache/cache.dart';
 import 'data/source/database/hive_service.dart';
 

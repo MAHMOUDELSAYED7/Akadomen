@@ -1,18 +1,20 @@
 import 'dart:io' show File;
-import 'package:akadomen/core/utils/constants/routes.dart';
-import 'package:akadomen/core/utils/extentions/extentions.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../controllers/image/image_cubit.dart';
-import '../controllers/repository/fruits_repository.dart';
-import '../../data/models/juice.dart';
+
 import '../../core/utils/constants/colors.dart';
 import '../../core/utils/constants/images.dart';
+import '../../core/utils/constants/routes.dart';
+import '../../core/utils/extension/extension.dart';
 import '../../core/utils/helpers/my_snackbar.dart';
 import '../../core/widgets/custom_button.dart';
 import '../../core/widgets/custom_text_field.dart';
 import '../../core/widgets/logout_widget.dart';
+import '../../data/models/juice.dart';
+import '../controllers/image/image_cubit.dart';
+import '../controllers/repository/fruits_repository.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});

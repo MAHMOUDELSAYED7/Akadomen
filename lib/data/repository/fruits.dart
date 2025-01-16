@@ -1,7 +1,8 @@
-import '../source/database/hive.dart';
+import 'package:hive/hive.dart';
+
 import '../models/archive.dart';
 import '../models/juice.dart';
-import 'package:hive/hive.dart';
+import '../source/database/hive.dart';
 
 class FruitsRepository {
   FruitsRepository._privateConstructor();

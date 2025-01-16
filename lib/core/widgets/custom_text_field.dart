@@ -1,6 +1,7 @@
-import 'package:akadomen/core/utils/extentions/extentions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'package:akadomen/core/utils/extension/extension.dart';
 
 import '../utils/constants/colors.dart';
 

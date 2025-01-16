@@ -1,14 +1,16 @@
-import 'package:akadomen/core/utils/constants/images.dart';
+import 'dart:typed_data';
+
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:intl/intl.dart';
 import 'package:pdf/pdf.dart' show PdfColor;
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
-import 'package:intl/intl.dart';
-import 'package:flutter/services.dart' show rootBundle;
-import 'dart:typed_data';
+
 import '../../../core/service/cache/cache.dart';
+import '../../../core/utils/constants/images.dart';
 import '../../../data/models/juice.dart';
 import '../../../data/repository/fruits.dart';
 import '../../../data/source/database/hive_service.dart';

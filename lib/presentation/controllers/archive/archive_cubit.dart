@@ -1,9 +1,9 @@
-import 'package:akadomen/data/repository/fruits.dart';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 
 import '../../../core/service/cache/cache.dart';
 import '../../../data/models/archive.dart';
+import '../../../data/repository/fruits.dart';
 
 part 'archive_state.dart';
 

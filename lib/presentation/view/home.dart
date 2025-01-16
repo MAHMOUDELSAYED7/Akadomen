@@ -1,15 +1,16 @@
 import 'dart:io';
 
-import 'package:akadomen/core/utils/constants/colors.dart';
-import 'package:akadomen/core/utils/constants/routes.dart';
-import 'package:akadomen/core/utils/extentions/extentions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../controllers/calc/calccubit_cubit.dart';
-import '../controllers/repository/fruits_repository.dart';
-import '../../data/models/juice.dart';
+
+import '../../core/utils/constants/colors.dart';
 import '../../core/utils/constants/images.dart';
+import '../../core/utils/constants/routes.dart';
+import '../../core/utils/extension/extension.dart';
+import '../../data/models/juice.dart';
+import '../controllers/calc/calc_cubit.dart';
+import '../controllers/repository/fruits_repository.dart';
 import 'widgets/add_remove.dart';
 import 'widgets/invoice_widget.dart';
 import 'widgets/item_card.dart';

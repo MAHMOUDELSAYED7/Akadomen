@@ -1,11 +1,12 @@
-import 'package:akadomen/presentation/controllers/logout/logout_cubit.dart';
-import 'package:akadomen/core/utils/constants/audios.dart';
-import 'package:akadomen/core/utils/constants/images.dart';
-import 'package:akadomen/core/utils/constants/routes.dart';
-import 'package:akadomen/core/utils/extentions/extentions.dart';
-import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../core/utils/constants/audios.dart';
+import '../../core/utils/constants/images.dart';
+import '../../core/utils/constants/routes.dart';
+import '../../core/utils/extension/extension.dart';
+import '../../presentation/controllers/logout/logout_cubit.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

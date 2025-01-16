@@ -1,14 +1,14 @@
-import 'package:akadomen/core/utils/extentions/extentions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../controllers/register/register_cubit.dart';
 import '../../core/utils/constants/colors.dart';
 import '../../core/utils/constants/images.dart';
+import '../../core/utils/extension/extension.dart';
 import '../../core/utils/helpers/my_snackbar.dart';
 import '../../core/widgets/custom_button.dart';
 import '../../core/widgets/custom_text_field.dart';
+import '../controllers/register/register_cubit.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:akadomen/data/models/juice.dart';
+import '../../../data/models/juice.dart';
 
 class CalculatorCubit extends Cubit<Map<JuiceModel, int>> {
   CalculatorCubit() : super({});
