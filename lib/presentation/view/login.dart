@@ -1,7 +1,10 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../core/service/audio_service.dart';
+import '../../core/utils/constants/audios.dart';
 import '../../core/utils/constants/colors.dart';
 import '../../core/utils/constants/images.dart';
 import '../../core/utils/constants/routes.dart';
@@ -29,6 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   String? _username;
   String? _password;
+
   void _login() {
     if (_formKey.currentState?.validate() ?? false) {
       _formKey.currentState?.save();
@@ -112,7 +116,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       listener: (context, state) {
                         if (state is LoginSuccess) {
                           customSnackBar(context, 'Login success!');
-
+                          AudioService.playLogoutSound();
                           Navigator.pushReplacementNamed(
                               context, RouteManager.home);
                         }

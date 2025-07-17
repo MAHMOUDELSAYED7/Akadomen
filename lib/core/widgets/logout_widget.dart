@@ -2,6 +2,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../core/service/audio_service.dart';
 import '../../presentation/controllers/logout/logout_cubit.dart';
 import '../utils/constants/audios.dart';
 import '../utils/constants/colors.dart';
@@ -36,18 +37,11 @@ class LogoutWidget extends StatelessWidget {
         child: IconButton(
           icon: const Icon(Icons.logout),
           onPressed: () {
-            _audioPlayer();
+            AudioService.playLogoutSound();
             context.read<AuthStatus>().logout();
           },
         ),
       ),
-    );
-  }
-
-  Future<void> _audioPlayer() async {
-    AudioPlayer().play(
-      volume: double.infinity,
-      UrlSource(AudiosManager.logoutSound),
     );
   }
 }

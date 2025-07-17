@@ -2,6 +2,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../core/service/audio_service.dart';
 import '../../core/utils/constants/audios.dart';
 import '../../core/utils/constants/images.dart';
 import '../../core/utils/constants/routes.dart';
@@ -18,18 +19,14 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    _goToNextScreen();
     super.initState();
-    _player = AudioPlayer();
-    _audioPlayer();
+    _initializeAndPlayAudio();
+    _goToNextScreen();
   }
 
-  late AudioPlayer _player;
-  Future<void> _audioPlayer() async {
-    _player.play(
-      volume: double.infinity,
-      UrlSource(AudiosManager.splashSound),
-    );
+  Future<void> _initializeAndPlayAudio() async {
+    await AudioService.initialize();
+    await AudioService.playSplashSound();
   }
 
   Future<void> _goToNextScreen() async {
